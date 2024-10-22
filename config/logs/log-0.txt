@@ -1,0 +1,475 @@
+[10-22-2024 20:19:58] [I] Server loaded. Type 'help' for help.
+[10-22-2024 20:20:29] [E] Command not found. Did you mean "js"?
+[10-22-2024 20:20:29] [I] Commands:
+[10-22-2024 20:20:29] [I]    help [command] - Display the command list, or get help for a specific command.
+[10-22-2024 20:20:29] [I]    version - Displays server version info.
+[10-22-2024 20:20:29] [I]    exit - Exit the server application.
+[10-22-2024 20:20:29] [I]    stop - Stop hosting the server.
+[10-22-2024 20:20:29] [I]    host [mapname] [mode] - Open the server. Will default to survival and a random map if not specified.
+[10-22-2024 20:20:29] [I]    maps [all/custom/default] - Display available maps. Displays only custom maps by default.
+[10-22-2024 20:20:29] [I]    reloadmaps - Reload all maps from disk.
+[10-22-2024 20:20:29] [I]    status - Display server status.
+[10-22-2024 20:20:29] [I]    mods - Display all loaded mods.
+[10-22-2024 20:20:29] [I]    mod <name...> - Display information about a loaded plugin.
+[10-22-2024 20:20:29] [I]    js <script...> - Run arbitrary Javascript.
+[10-22-2024 20:20:29] [I]    say <message...> - Send a message to all players.
+[10-22-2024 20:20:29] [I]    pause <on/off> - Pause or unpause the game.
+[10-22-2024 20:20:29] [I]    rules [remove/add] [name] [value...] - List, remove or add global rules. These will apply regardless of map.
+[10-22-2024 20:20:29] [I]    fillitems [team] - Fill the core with items.
+[10-22-2024 20:20:29] [I]    playerlimit [off/somenumber] - Set the server player limit.
+[10-22-2024 20:20:29] [I]    config [name] [value...] - Configure server settings.
+[10-22-2024 20:20:29] [I]    subnet-ban [add/remove] [address] - Ban a subnet. This simply rejects all connections with IPs starting with some string.
+[10-22-2024 20:20:29] [I]    whitelist [add/remove] [ID] - Add/remove players from the whitelist using their ID.
+[10-22-2024 20:20:29] [I]    shuffle [none/all/custom/builtin] - Set map shuffling mode.
+[10-22-2024 20:20:29] [I]    nextmap <mapname...> - Set the next map to be played after a game-over. Overrides shuffling.
+[10-22-2024 20:20:29] [I]    kick <username...> - Kick a person by name.
+[10-22-2024 20:20:29] [I]    ban <type-id/name/ip> <username/IP/ID...> - Ban a person.
+[10-22-2024 20:20:29] [I]    bans - List all banned IPs and IDs.
+[10-22-2024 20:20:29] [I]    unban <ip/ID> - Completely unban a person by IP or ID.
+[10-22-2024 20:20:29] [I]    pardon <ID> - Pardons a votekicked player by ID and allows them to join again.
+[10-22-2024 20:20:29] [I]    admin <add/remove> <username/ID...> - Make an online user admin
+[10-22-2024 20:20:29] [I]    admins - List all admins.
+[10-22-2024 20:20:29] [I]    players - List all players currently in game.
+[10-22-2024 20:20:29] [I]    runwave - Trigger the next wave.
+[10-22-2024 20:20:29] [I]    load <slot> - Load a save from a slot.
+[10-22-2024 20:20:29] [I]    save <slot> - Save game state to a slot.
+[10-22-2024 20:20:29] [I]    saves - List all saves in the save directory.
+[10-22-2024 20:20:29] [I]    gameover - Force a game over.
+[10-22-2024 20:20:29] [I]    info <IP/UUID/name...> - Find player info(s). Can optionally check for all names or IPs a player has had.
+[10-22-2024 20:20:29] [I]    search <name...> - Search players who have used part of a name.
+[10-22-2024 20:20:29] [I]    gc - Trigger a garbage collection. Testing only.
+[10-22-2024 20:20:29] [I]    yes - Run the last suggested incorrect command.
+[10-22-2024 20:21:02] [I] Maps:
+[10-22-2024 20:21:02] [I]   Ancient_Caldera: Default / 256x256
+[10-22-2024 20:21:02] [I]   Archipelago: Default / 500x500
+[10-22-2024 20:21:02] [I]   Debris_Field: Default / 400x400
+[10-22-2024 20:21:02] [I]   Domain: Default / 494x494
+[10-22-2024 20:21:02] [I]   Fork: Default / 250x300
+[10-22-2024 20:21:02] [I]   Fortress: Default / 256x256
+[10-22-2024 20:21:02] [I]   Glacier: Default / 150x250
+[10-22-2024 20:21:02] [I]   Islands: Default / 256x256
+[10-22-2024 20:21:02] [I]   Labyrinth: Default / 200x200
+[10-22-2024 20:21:02] [I]   Maze: Default / 256x256
+[10-22-2024 20:21:02] [I]   Molten_Lake: Default / 400x400
+[10-22-2024 20:21:02] [I]   Mud_Flats: Default / 400x400
+[10-22-2024 20:21:02] [I]   Passage: Default / 500x120
+[10-22-2024 20:21:02] [I]   Shattered: Default / 350x350
+[10-22-2024 20:21:02] [I]   Tendrils: Default / 300x300
+[10-22-2024 20:21:02] [I]   Triad: Default / 200x200
+[10-22-2024 20:21:02] [I]   Veins: Default / 350x200
+[10-22-2024 20:21:02] [I]   Wasteland: Default / 300x300
+[10-22-2024 20:21:02] [I] Map directory: /workspaces/Mindustry/config/maps
+[10-22-2024 20:21:40] [I] Loading map...
+[10-22-2024 20:21:40] [I] Map loaded.
+[10-22-2024 20:21:40] [I] Opened a server on port 6567.
+[10-22-2024 20:23:17] [I] Status:
+[10-22-2024 20:23:17] [I]   Playing on map Wasteland / Wave 1
+[10-22-2024 20:23:17] [I]   142 seconds until next wave.
+[10-22-2024 20:23:17] [I]   0 units / 0 enemies
+[10-22-2024 20:23:17] [I]   61 FPS, 21 MB used.
+[10-22-2024 20:23:17] [I]   No players connected.
+[10-22-2024 20:24:39] [I] Stopped server.
+[10-22-2024 20:24:44] [I] Loading map...
+[10-22-2024 20:24:45] [I] Map loaded.
+[10-22-2024 20:24:45] [I] Opened a server on port 6567.
+[10-22-2024 20:26:06] [I] Commands:
+[10-22-2024 20:26:06] [I]    help [command] - Display the command list, or get help for a specific command.
+[10-22-2024 20:26:06] [I]    version - Displays server version info.
+[10-22-2024 20:26:06] [I]    exit - Exit the server application.
+[10-22-2024 20:26:06] [I]    stop - Stop hosting the server.
+[10-22-2024 20:26:06] [I]    host [mapname] [mode] - Open the server. Will default to survival and a random map if not specified.
+[10-22-2024 20:26:06] [I]    maps [all/custom/default] - Display available maps. Displays only custom maps by default.
+[10-22-2024 20:26:06] [I]    reloadmaps - Reload all maps from disk.
+[10-22-2024 20:26:06] [I]    status - Display server status.
+[10-22-2024 20:26:06] [I]    mods - Display all loaded mods.
+[10-22-2024 20:26:06] [I]    mod <name...> - Display information about a loaded plugin.
+[10-22-2024 20:26:06] [I]    js <script...> - Run arbitrary Javascript.
+[10-22-2024 20:26:06] [I]    say <message...> - Send a message to all players.
+[10-22-2024 20:26:06] [I]    pause <on/off> - Pause or unpause the game.
+[10-22-2024 20:26:06] [I]    rules [remove/add] [name] [value...] - List, remove or add global rules. These will apply regardless of map.
+[10-22-2024 20:26:06] [I]    fillitems [team] - Fill the core with items.
+[10-22-2024 20:26:06] [I]    playerlimit [off/somenumber] - Set the server player limit.
+[10-22-2024 20:26:06] [I]    config [name] [value...] - Configure server settings.
+[10-22-2024 20:26:06] [I]    subnet-ban [add/remove] [address] - Ban a subnet. This simply rejects all connections with IPs starting with some string.
+[10-22-2024 20:26:06] [I]    whitelist [add/remove] [ID] - Add/remove players from the whitelist using their ID.
+[10-22-2024 20:26:06] [I]    shuffle [none/all/custom/builtin] - Set map shuffling mode.
+[10-22-2024 20:26:06] [I]    nextmap <mapname...> - Set the next map to be played after a game-over. Overrides shuffling.
+[10-22-2024 20:26:06] [I]    kick <username...> - Kick a person by name.
+[10-22-2024 20:26:06] [I]    ban <type-id/name/ip> <username/IP/ID...> - Ban a person.
+[10-22-2024 20:26:06] [I]    bans - List all banned IPs and IDs.
+[10-22-2024 20:26:06] [I]    unban <ip/ID> - Completely unban a person by IP or ID.
+[10-22-2024 20:26:06] [I]    pardon <ID> - Pardons a votekicked player by ID and allows them to join again.
+[10-22-2024 20:26:06] [I]    admin <add/remove> <username/ID...> - Make an online user admin
+[10-22-2024 20:26:06] [I]    admins - List all admins.
+[10-22-2024 20:26:06] [I]    players - List all players currently in game.
+[10-22-2024 20:26:06] [I]    runwave - Trigger the next wave.
+[10-22-2024 20:26:06] [I]    load <slot> - Load a save from a slot.
+[10-22-2024 20:26:06] [I]    save <slot> - Save game state to a slot.
+[10-22-2024 20:26:06] [I]    saves - List all saves in the save directory.
+[10-22-2024 20:26:06] [I]    gameover - Force a game over.
+[10-22-2024 20:26:06] [I]    info <IP/UUID/name...> - Find player info(s). Can optionally check for all names or IPs a player has had.
+[10-22-2024 20:26:06] [I]    search <name...> - Search players who have used part of a name.
+[10-22-2024 20:26:06] [I]    gc - Trigger a garbage collection. Testing only.
+[10-22-2024 20:26:06] [I]    yes - Run the last suggested incorrect command.
+[10-22-2024 20:26:47] [E] Too few command arguments. Usage: info <IP/UUID/name...>
+[10-22-2024 20:27:05] [I] Commands:
+[10-22-2024 20:27:05] [I]    help [command] - Display the command list, or get help for a specific command.
+[10-22-2024 20:27:05] [I]    version - Displays server version info.
+[10-22-2024 20:27:05] [I]    exit - Exit the server application.
+[10-22-2024 20:27:05] [I]    stop - Stop hosting the server.
+[10-22-2024 20:27:05] [I]    host [mapname] [mode] - Open the server. Will default to survival and a random map if not specified.
+[10-22-2024 20:27:05] [I]    maps [all/custom/default] - Display available maps. Displays only custom maps by default.
+[10-22-2024 20:27:05] [I]    reloadmaps - Reload all maps from disk.
+[10-22-2024 20:27:05] [I]    status - Display server status.
+[10-22-2024 20:27:05] [I]    mods - Display all loaded mods.
+[10-22-2024 20:27:05] [I]    mod <name...> - Display information about a loaded plugin.
+[10-22-2024 20:27:05] [I]    js <script...> - Run arbitrary Javascript.
+[10-22-2024 20:27:05] [I]    say <message...> - Send a message to all players.
+[10-22-2024 20:27:05] [I]    pause <on/off> - Pause or unpause the game.
+[10-22-2024 20:27:05] [I]    rules [remove/add] [name] [value...] - List, remove or add global rules. These will apply regardless of map.
+[10-22-2024 20:27:05] [I]    fillitems [team] - Fill the core with items.
+[10-22-2024 20:27:05] [I]    playerlimit [off/somenumber] - Set the server player limit.
+[10-22-2024 20:27:05] [I]    config [name] [value...] - Configure server settings.
+[10-22-2024 20:27:05] [I]    subnet-ban [add/remove] [address] - Ban a subnet. This simply rejects all connections with IPs starting with some string.
+[10-22-2024 20:27:05] [I]    whitelist [add/remove] [ID] - Add/remove players from the whitelist using their ID.
+[10-22-2024 20:27:05] [I]    shuffle [none/all/custom/builtin] - Set map shuffling mode.
+[10-22-2024 20:27:05] [I]    nextmap <mapname...> - Set the next map to be played after a game-over. Overrides shuffling.
+[10-22-2024 20:27:05] [I]    kick <username...> - Kick a person by name.
+[10-22-2024 20:27:05] [I]    ban <type-id/name/ip> <username/IP/ID...> - Ban a person.
+[10-22-2024 20:27:05] [I]    bans - List all banned IPs and IDs.
+[10-22-2024 20:27:05] [I]    unban <ip/ID> - Completely unban a person by IP or ID.
+[10-22-2024 20:27:05] [I]    pardon <ID> - Pardons a votekicked player by ID and allows them to join again.
+[10-22-2024 20:27:05] [I]    admin <add/remove> <username/ID...> - Make an online user admin
+[10-22-2024 20:27:05] [I]    admins - List all admins.
+[10-22-2024 20:27:05] [I]    players - List all players currently in game.
+[10-22-2024 20:27:05] [I]    runwave - Trigger the next wave.
+[10-22-2024 20:27:05] [I]    load <slot> - Load a save from a slot.
+[10-22-2024 20:27:05] [I]    save <slot> - Save game state to a slot.
+[10-22-2024 20:27:05] [I]    saves - List all saves in the save directory.
+[10-22-2024 20:27:05] [I]    gameover - Force a game over.
+[10-22-2024 20:27:05] [I]    info <IP/UUID/name...> - Find player info(s). Can optionally check for all names or IPs a player has had.
+[10-22-2024 20:27:05] [I]    search <name...> - Search players who have used part of a name.
+[10-22-2024 20:27:05] [I]    gc - Trigger a garbage collection. Testing only.
+[10-22-2024 20:27:05] [I]    yes - Run the last suggested incorrect command.
+[10-22-2024 20:27:18] [I] Stopped server.
+[10-22-2024 20:27:20] [I] Commands:
+[10-22-2024 20:27:20] [I]    help [command] - Display the command list, or get help for a specific command.
+[10-22-2024 20:27:20] [I]    version - Displays server version info.
+[10-22-2024 20:27:20] [I]    exit - Exit the server application.
+[10-22-2024 20:27:20] [I]    stop - Stop hosting the server.
+[10-22-2024 20:27:20] [I]    host [mapname] [mode] - Open the server. Will default to survival and a random map if not specified.
+[10-22-2024 20:27:20] [I]    maps [all/custom/default] - Display available maps. Displays only custom maps by default.
+[10-22-2024 20:27:20] [I]    reloadmaps - Reload all maps from disk.
+[10-22-2024 20:27:20] [I]    status - Display server status.
+[10-22-2024 20:27:20] [I]    mods - Display all loaded mods.
+[10-22-2024 20:27:20] [I]    mod <name...> - Display information about a loaded plugin.
+[10-22-2024 20:27:20] [I]    js <script...> - Run arbitrary Javascript.
+[10-22-2024 20:27:20] [I]    say <message...> - Send a message to all players.
+[10-22-2024 20:27:20] [I]    pause <on/off> - Pause or unpause the game.
+[10-22-2024 20:27:20] [I]    rules [remove/add] [name] [value...] - List, remove or add global rules. These will apply regardless of map.
+[10-22-2024 20:27:20] [I]    fillitems [team] - Fill the core with items.
+[10-22-2024 20:27:20] [I]    playerlimit [off/somenumber] - Set the server player limit.
+[10-22-2024 20:27:20] [I]    config [name] [value...] - Configure server settings.
+[10-22-2024 20:27:20] [I]    subnet-ban [add/remove] [address] - Ban a subnet. This simply rejects all connections with IPs starting with some string.
+[10-22-2024 20:27:20] [I]    whitelist [add/remove] [ID] - Add/remove players from the whitelist using their ID.
+[10-22-2024 20:27:20] [I]    shuffle [none/all/custom/builtin] - Set map shuffling mode.
+[10-22-2024 20:27:20] [I]    nextmap <mapname...> - Set the next map to be played after a game-over. Overrides shuffling.
+[10-22-2024 20:27:20] [I]    kick <username...> - Kick a person by name.
+[10-22-2024 20:27:20] [I]    ban <type-id/name/ip> <username/IP/ID...> - Ban a person.
+[10-22-2024 20:27:20] [I]    bans - List all banned IPs and IDs.
+[10-22-2024 20:27:20] [I]    unban <ip/ID> - Completely unban a person by IP or ID.
+[10-22-2024 20:27:20] [I]    pardon <ID> - Pardons a votekicked player by ID and allows them to join again.
+[10-22-2024 20:27:20] [I]    admin <add/remove> <username/ID...> - Make an online user admin
+[10-22-2024 20:27:20] [I]    admins - List all admins.
+[10-22-2024 20:27:20] [I]    players - List all players currently in game.
+[10-22-2024 20:27:20] [I]    runwave - Trigger the next wave.
+[10-22-2024 20:27:20] [I]    load <slot> - Load a save from a slot.
+[10-22-2024 20:27:20] [I]    save <slot> - Save game state to a slot.
+[10-22-2024 20:27:20] [I]    saves - List all saves in the save directory.
+[10-22-2024 20:27:20] [I]    gameover - Force a game over.
+[10-22-2024 20:27:20] [I]    info <IP/UUID/name...> - Find player info(s). Can optionally check for all names or IPs a player has had.
+[10-22-2024 20:27:20] [I]    search <name...> - Search players who have used part of a name.
+[10-22-2024 20:27:20] [I]    gc - Trigger a garbage collection. Testing only.
+[10-22-2024 20:27:20] [I]    yes - Run the last suggested incorrect command.
+[10-22-2024 20:27:28] [I] Nobody with that name could be found.
+[10-22-2024 20:27:38] [I] Randomized next map to be Domain.
+[10-22-2024 20:27:38] [I] Loading map...
+[10-22-2024 20:27:39] [I] Map loaded.
+[10-22-2024 20:27:39] [I] Opened a server on port 6567.
+[10-22-2024 20:29:44] [I] Commands:
+[10-22-2024 20:29:44] [I]    help [command] - Display the command list, or get help for a specific command.
+[10-22-2024 20:29:44] [I]    version - Displays server version info.
+[10-22-2024 20:29:44] [I]    exit - Exit the server application.
+[10-22-2024 20:29:44] [I]    stop - Stop hosting the server.
+[10-22-2024 20:29:44] [I]    host [mapname] [mode] - Open the server. Will default to survival and a random map if not specified.
+[10-22-2024 20:29:44] [I]    maps [all/custom/default] - Display available maps. Displays only custom maps by default.
+[10-22-2024 20:29:44] [I]    reloadmaps - Reload all maps from disk.
+[10-22-2024 20:29:44] [I]    status - Display server status.
+[10-22-2024 20:29:44] [I]    mods - Display all loaded mods.
+[10-22-2024 20:29:44] [I]    mod <name...> - Display information about a loaded plugin.
+[10-22-2024 20:29:44] [I]    js <script...> - Run arbitrary Javascript.
+[10-22-2024 20:29:44] [I]    say <message...> - Send a message to all players.
+[10-22-2024 20:29:44] [I]    pause <on/off> - Pause or unpause the game.
+[10-22-2024 20:29:44] [I]    rules [remove/add] [name] [value...] - List, remove or add global rules. These will apply regardless of map.
+[10-22-2024 20:29:44] [I]    fillitems [team] - Fill the core with items.
+[10-22-2024 20:29:44] [I]    playerlimit [off/somenumber] - Set the server player limit.
+[10-22-2024 20:29:44] [I]    config [name] [value...] - Configure server settings.
+[10-22-2024 20:29:44] [I]    subnet-ban [add/remove] [address] - Ban a subnet. This simply rejects all connections with IPs starting with some string.
+[10-22-2024 20:29:44] [I]    whitelist [add/remove] [ID] - Add/remove players from the whitelist using their ID.
+[10-22-2024 20:29:44] [I]    shuffle [none/all/custom/builtin] - Set map shuffling mode.
+[10-22-2024 20:29:44] [I]    nextmap <mapname...> - Set the next map to be played after a game-over. Overrides shuffling.
+[10-22-2024 20:29:44] [I]    kick <username...> - Kick a person by name.
+[10-22-2024 20:29:44] [I]    ban <type-id/name/ip> <username/IP/ID...> - Ban a person.
+[10-22-2024 20:29:44] [I]    bans - List all banned IPs and IDs.
+[10-22-2024 20:29:44] [I]    unban <ip/ID> - Completely unban a person by IP or ID.
+[10-22-2024 20:29:44] [I]    pardon <ID> - Pardons a votekicked player by ID and allows them to join again.
+[10-22-2024 20:29:44] [I]    admin <add/remove> <username/ID...> - Make an online user admin
+[10-22-2024 20:29:44] [I]    admins - List all admins.
+[10-22-2024 20:29:44] [I]    players - List all players currently in game.
+[10-22-2024 20:29:44] [I]    runwave - Trigger the next wave.
+[10-22-2024 20:29:44] [I]    load <slot> - Load a save from a slot.
+[10-22-2024 20:29:44] [I]    save <slot> - Save game state to a slot.
+[10-22-2024 20:29:44] [I]    saves - List all saves in the save directory.
+[10-22-2024 20:29:44] [I]    gameover - Force a game over.
+[10-22-2024 20:29:44] [I]    info <IP/UUID/name...> - Find player info(s). Can optionally check for all names or IPs a player has had.
+[10-22-2024 20:29:44] [I]    search <name...> - Search players who have used part of a name.
+[10-22-2024 20:29:44] [I]    gc - Trigger a garbage collection. Testing only.
+[10-22-2024 20:29:44] [I]    yes - Run the last suggested incorrect command.
+[10-22-2024 20:30:36] [I] Status:
+[10-22-2024 20:30:36] [I]   Playing on map Domain / Wave 1
+[10-22-2024 20:30:36] [I]   302 seconds until next wave.
+[10-22-2024 20:30:36] [I]   0 units / 0 enemies
+[10-22-2024 20:30:36] [I]   61 FPS, 45 MB used.
+[10-22-2024 20:30:36] [I]   No players connected.
+[10-22-2024 20:31:11] [E] Too few command arguments. Usage: js <script...>
+[10-22-2024 20:31:24] [I] Version: Mindustry 7-release official / build 146
+[10-22-2024 20:31:24] [I] Java Version: 21.0.4
+[10-22-2024 20:34:04] [I] All config values:
+[10-22-2024 20:34:04] [I] | name: Server
+[10-22-2024 20:34:04] [I] | | The server name as displayed on clients.
+[10-22-2024 20:34:04] [I] |
+[10-22-2024 20:34:04] [I] | desc: off
+[10-22-2024 20:34:04] [I] | | The server description, displayed under the name. Max 100 characters.
+[10-22-2024 20:34:04] [I] |
+[10-22-2024 20:34:04] [I] | port: 6567
+[10-22-2024 20:34:04] [I] | | The port to host on.
+[10-22-2024 20:34:04] [I] |
+[10-22-2024 20:34:04] [I] | autoUpdate: false
+[10-22-2024 20:34:04] [I] | | Whether to auto-update and exit when a new bleeding-edge update arrives.
+[10-22-2024 20:34:04] [I] |
+[10-22-2024 20:34:04] [I] | showConnectMessages: true
+[10-22-2024 20:34:04] [I] | | Whether to display connect/disconnect messages.
+[10-22-2024 20:34:04] [I] |
+[10-22-2024 20:34:04] [I] | enableVotekick: true
+[10-22-2024 20:34:04] [I] | | Whether votekick is enabled.
+[10-22-2024 20:34:04] [I] |
+[10-22-2024 20:34:04] [I] | startCommands: 
+[10-22-2024 20:34:04] [I] | | Commands run at startup. This should be a comma-separated list.
+[10-22-2024 20:34:04] [I] |
+[10-22-2024 20:34:04] [I] | logging: true
+[10-22-2024 20:34:04] [I] | | Whether to log everything to files.
+[10-22-2024 20:34:04] [I] |
+[10-22-2024 20:34:04] [I] | strict: true
+[10-22-2024 20:34:04] [I] | | Whether strict mode is on - corrects positions and prevents duplicate UUIDs.
+[10-22-2024 20:34:04] [I] |
+[10-22-2024 20:34:04] [I] | antiSpam: true
+[10-22-2024 20:34:04] [I] | | Whether spammers are automatically kicked and rate-limited.
+[10-22-2024 20:34:04] [I] |
+[10-22-2024 20:34:04] [I] | interactRateWindow: 6
+[10-22-2024 20:34:04] [I] | | Block interaction rate limit window, in seconds.
+[10-22-2024 20:34:04] [I] |
+[10-22-2024 20:34:04] [I] | interactRateLimit: 25
+[10-22-2024 20:34:04] [I] | | Block interaction rate limit.
+[10-22-2024 20:34:04] [I] |
+[10-22-2024 20:34:04] [I] | interactRateKick: 60
+[10-22-2024 20:34:04] [I] | | How many times a player must interact inside the window to get kicked.
+[10-22-2024 20:34:04] [I] |
+[10-22-2024 20:34:04] [I] | messageRateLimit: 0
+[10-22-2024 20:34:04] [I] | | Message rate limit in seconds. 0 to disable.
+[10-22-2024 20:34:04] [I] |
+[10-22-2024 20:34:04] [I] | messageSpamKick: 3
+[10-22-2024 20:34:04] [I] | | How many times a player must send a message before the cooldown to get kicked. 0 to disable.
+[10-22-2024 20:34:04] [I] |
+[10-22-2024 20:34:04] [I] | packetSpamLimit: 300
+[10-22-2024 20:34:04] [I] | | Limit for packet count sent within 3sec that will lead to a blacklist + kick.
+[10-22-2024 20:34:04] [I] |
+[10-22-2024 20:34:04] [I] | chatSpamLimit: 20
+[10-22-2024 20:34:04] [I] | | Limit for chat packet count sent within 2sec that will lead to a blacklist + kick. Not the same as a rate limit.
+[10-22-2024 20:34:04] [I] |
+[10-22-2024 20:34:04] [I] | socketInput: false
+[10-22-2024 20:34:04] [I] | | Allows a local application to control this server through a local TCP socket.
+[10-22-2024 20:34:04] [I] |
+[10-22-2024 20:34:04] [I] | socketInputPort: 6859
+[10-22-2024 20:34:04] [I] | | The port for socket input.
+[10-22-2024 20:34:04] [I] |
+[10-22-2024 20:34:04] [I] | socketInputAddress: localhost
+[10-22-2024 20:34:04] [I] | | The bind address for socket input.
+[10-22-2024 20:34:04] [I] |
+[10-22-2024 20:34:04] [I] | allowCustomClients: false
+[10-22-2024 20:34:04] [I] | | Whether custom clients are allowed to connect.
+[10-22-2024 20:34:04] [I] |
+[10-22-2024 20:34:04] [I] | whitelist: false
+[10-22-2024 20:34:04] [I] | | Whether the whitelist is used.
+[10-22-2024 20:34:04] [I] |
+[10-22-2024 20:34:04] [I] | motd: off
+[10-22-2024 20:34:04] [I] | | The message displayed to people on connection.
+[10-22-2024 20:34:04] [I] |
+[10-22-2024 20:34:04] [I] | autosave: false
+[10-22-2024 20:34:04] [I] | | Whether the periodically save the map when playing.
+[10-22-2024 20:34:04] [I] |
+[10-22-2024 20:34:04] [I] | autosaveAmount: 10
+[10-22-2024 20:34:04] [I] | | The maximum amount of autosaves. Older ones get replaced.
+[10-22-2024 20:34:04] [I] |
+[10-22-2024 20:34:04] [I] | autosaveSpacing: 300
+[10-22-2024 20:34:04] [I] | | Spacing between autosaves in seconds.
+[10-22-2024 20:34:04] [I] |
+[10-22-2024 20:34:04] [I] | debug: false
+[10-22-2024 20:34:04] [I] | | Enable debug logging.
+[10-22-2024 20:34:04] [I] |
+[10-22-2024 20:34:04] [I] | snapshotInterval: 200
+[10-22-2024 20:34:04] [I] | | Client entity snapshot interval in ms.
+[10-22-2024 20:34:04] [I] |
+[10-22-2024 20:34:04] [I] | autoPause: false
+[10-22-2024 20:34:04] [I] | | Whether the game should pause when nobody is online.
+[10-22-2024 20:34:04] [I] |
+[10-22-2024 20:34:04] [I] | roundExtraTime: 12
+[10-22-2024 20:34:04] [I] | | Time before loading a new map after the gameover, in seconds.
+[10-22-2024 20:34:04] [I] |
+[10-22-2024 20:34:04] [I] | maxLogLength: 5242880
+[10-22-2024 20:34:04] [I] | | The Maximum log file size, in bytes.
+[10-22-2024 20:34:04] [I] |
+[10-22-2024 20:36:01] [I] Status:
+[10-22-2024 20:36:01] [I]   Playing on map Domain / Wave 2
+[10-22-2024 20:36:01] [I]   217 seconds until next wave.
+[10-22-2024 20:36:01] [I]   1 units / 1 enemies
+[10-22-2024 20:36:01] [I]   60 FPS, 55 MB used.
+[10-22-2024 20:36:01] [I]   No players connected.
+[10-22-2024 20:38:09] [I] Stopped server.
+[10-22-2024 20:38:54] [I] Randomized next map to be Triad.
+[10-22-2024 20:38:54] [I] Loading map...
+[10-22-2024 20:38:54] [I] Map loaded.
+[10-22-2024 20:38:54] [I] Opened a server on port 6567.
+[10-22-2024 20:39:34] [I] Status:
+[10-22-2024 20:39:34] [I]   Playing on map Triad / Wave 1
+[10-22-2024 20:39:34] [I]   319 seconds until next wave.
+[10-22-2024 20:39:34] [I]   0 units / 0 enemies
+[10-22-2024 20:39:34] [I]   60 FPS, 36 MB used.
+[10-22-2024 20:39:34] [I]   No players connected.
+[10-22-2024 20:41:35] [I] Status:
+[10-22-2024 20:41:35] [I]   Playing on map Triad / Wave 1
+[10-22-2024 20:41:35] [I]   198 seconds until next wave.
+[10-22-2024 20:41:35] [I]   0 units / 0 enemies
+[10-22-2024 20:41:35] [I]   60 FPS, 38 MB used.
+[10-22-2024 20:41:35] [I]   No players connected.
+[10-22-2024 20:45:26] [I] All config values:
+[10-22-2024 20:45:26] [I] | name: Server
+[10-22-2024 20:45:26] [I] | | The server name as displayed on clients.
+[10-22-2024 20:45:26] [I] |
+[10-22-2024 20:45:26] [I] | desc: off
+[10-22-2024 20:45:26] [I] | | The server description, displayed under the name. Max 100 characters.
+[10-22-2024 20:45:26] [I] |
+[10-22-2024 20:45:26] [I] | port: 6567
+[10-22-2024 20:45:26] [I] | | The port to host on.
+[10-22-2024 20:45:26] [I] |
+[10-22-2024 20:45:26] [I] | autoUpdate: false
+[10-22-2024 20:45:26] [I] | | Whether to auto-update and exit when a new bleeding-edge update arrives.
+[10-22-2024 20:45:26] [I] |
+[10-22-2024 20:45:26] [I] | showConnectMessages: true
+[10-22-2024 20:45:26] [I] | | Whether to display connect/disconnect messages.
+[10-22-2024 20:45:26] [I] |
+[10-22-2024 20:45:26] [I] | enableVotekick: true
+[10-22-2024 20:45:26] [I] | | Whether votekick is enabled.
+[10-22-2024 20:45:26] [I] |
+[10-22-2024 20:45:26] [I] | startCommands: 
+[10-22-2024 20:45:26] [I] | | Commands run at startup. This should be a comma-separated list.
+[10-22-2024 20:45:26] [I] |
+[10-22-2024 20:45:26] [I] | logging: true
+[10-22-2024 20:45:26] [I] | | Whether to log everything to files.
+[10-22-2024 20:45:26] [I] |
+[10-22-2024 20:45:26] [I] | strict: true
+[10-22-2024 20:45:26] [I] | | Whether strict mode is on - corrects positions and prevents duplicate UUIDs.
+[10-22-2024 20:45:26] [I] |
+[10-22-2024 20:45:26] [I] | antiSpam: true
+[10-22-2024 20:45:26] [I] | | Whether spammers are automatically kicked and rate-limited.
+[10-22-2024 20:45:26] [I] |
+[10-22-2024 20:45:26] [I] | interactRateWindow: 6
+[10-22-2024 20:45:26] [I] | | Block interaction rate limit window, in seconds.
+[10-22-2024 20:45:26] [I] |
+[10-22-2024 20:45:26] [I] | interactRateLimit: 25
+[10-22-2024 20:45:26] [I] | | Block interaction rate limit.
+[10-22-2024 20:45:26] [I] |
+[10-22-2024 20:45:26] [I] | interactRateKick: 60
+[10-22-2024 20:45:26] [I] | | How many times a player must interact inside the window to get kicked.
+[10-22-2024 20:45:26] [I] |
+[10-22-2024 20:45:26] [I] | messageRateLimit: 0
+[10-22-2024 20:45:26] [I] | | Message rate limit in seconds. 0 to disable.
+[10-22-2024 20:45:26] [I] |
+[10-22-2024 20:45:26] [I] | messageSpamKick: 3
+[10-22-2024 20:45:26] [I] | | How many times a player must send a message before the cooldown to get kicked. 0 to disable.
+[10-22-2024 20:45:26] [I] |
+[10-22-2024 20:45:26] [I] | packetSpamLimit: 300
+[10-22-2024 20:45:26] [I] | | Limit for packet count sent within 3sec that will lead to a blacklist + kick.
+[10-22-2024 20:45:26] [I] |
+[10-22-2024 20:45:26] [I] | chatSpamLimit: 20
+[10-22-2024 20:45:26] [I] | | Limit for chat packet count sent within 2sec that will lead to a blacklist + kick. Not the same as a rate limit.
+[10-22-2024 20:45:26] [I] |
+[10-22-2024 20:45:26] [I] | socketInput: false
+[10-22-2024 20:45:26] [I] | | Allows a local application to control this server through a local TCP socket.
+[10-22-2024 20:45:26] [I] |
+[10-22-2024 20:45:26] [I] | socketInputPort: 6859
+[10-22-2024 20:45:26] [I] | | The port for socket input.
+[10-22-2024 20:45:26] [I] |
+[10-22-2024 20:45:26] [I] | socketInputAddress: localhost
+[10-22-2024 20:45:26] [I] | | The bind address for socket input.
+[10-22-2024 20:45:26] [I] |
+[10-22-2024 20:45:26] [I] | allowCustomClients: false
+[10-22-2024 20:45:26] [I] | | Whether custom clients are allowed to connect.
+[10-22-2024 20:45:26] [I] |
+[10-22-2024 20:45:26] [I] | whitelist: false
+[10-22-2024 20:45:26] [I] | | Whether the whitelist is used.
+[10-22-2024 20:45:26] [I] |
+[10-22-2024 20:45:26] [I] | motd: off
+[10-22-2024 20:45:26] [I] | | The message displayed to people on connection.
+[10-22-2024 20:45:26] [I] |
+[10-22-2024 20:45:26] [I] | autosave: false
+[10-22-2024 20:45:26] [I] | | Whether the periodically save the map when playing.
+[10-22-2024 20:45:26] [I] |
+[10-22-2024 20:45:26] [I] | autosaveAmount: 10
+[10-22-2024 20:45:26] [I] | | The maximum amount of autosaves. Older ones get replaced.
+[10-22-2024 20:45:26] [I] |
+[10-22-2024 20:45:26] [I] | autosaveSpacing: 300
+[10-22-2024 20:45:26] [I] | | Spacing between autosaves in seconds.
+[10-22-2024 20:45:26] [I] |
+[10-22-2024 20:45:26] [I] | debug: false
+[10-22-2024 20:45:26] [I] | | Enable debug logging.
+[10-22-2024 20:45:26] [I] |
+[10-22-2024 20:45:26] [I] | snapshotInterval: 200
+[10-22-2024 20:45:26] [I] | | Client entity snapshot interval in ms.
+[10-22-2024 20:45:26] [I] |
+[10-22-2024 20:45:26] [I] | autoPause: false
+[10-22-2024 20:45:26] [I] | | Whether the game should pause when nobody is online.
+[10-22-2024 20:45:26] [I] |
+[10-22-2024 20:45:26] [I] | roundExtraTime: 12
+[10-22-2024 20:45:26] [I] | | Time before loading a new map after the gameover, in seconds.
+[10-22-2024 20:45:26] [I] |
+[10-22-2024 20:45:26] [I] | maxLogLength: 5242880
+[10-22-2024 20:45:26] [I] | | The Maximum log file size, in bytes.
+[10-22-2024 20:45:26] [I] |
+[10-22-2024 20:45:58] [I] port set to 5348.
+[10-22-2024 20:46:19] [I] Game over! Reached wave 2 with 0 players online on map Triad.
+[10-22-2024 20:46:19] [I] Selected next map to be Islands.
+[10-22-2024 20:46:43] [E] Unknown config: 'config'. Run the command with no arguments to get a list of valid configs.
+[10-22-2024 20:46:53] [I] name set to test limpatic1.
+[10-22-2024 20:47:15] [I] autoPause set to true.
+[10-22-2024 20:48:18] [E] Command not found. Did you mean "js"?
+[10-22-2024 20:48:18] [I] desc set to hi.
+[10-22-2024 20:48:28] [I] Stopped server.
+[10-22-2024 20:48:31] [I] Randomized next map to be Debris Field.
+[10-22-2024 20:48:31] [I] Loading map...
+[10-22-2024 20:48:31] [I] Map loaded.
+[10-22-2024 20:48:31] [I] Opened a server on port 5348.
+[10-22-2024 20:50:43] [I] Stopped server.
+[10-22-2024 20:50:45] [I] Stopped server.
+[10-22-2024 20:50:50] [E] Invalid command. Type 'help' for help.
+[10-22-2024 20:50:53] [E] Too few command arguments. Usage: pause <on/off>
+[10-22-2024 20:51:00] [I] port set to 6567.
